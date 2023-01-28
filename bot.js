@@ -23,14 +23,13 @@ bot . login  ( processo . env . TOKEN ) ;
 
 bot . em  ( "pronto" ,   ( )   =>   {
   deixe   atividades   =  [
-      `Utilize $ {process.env.PREFIX} ajuda para obter ajuda!` ,
-      `$ {bot.guilds.cache.size} servidores!` ,
-      `O Moner é meu Dono!` ,
-      `Rusty Apex!`
+      `Utilize $ {process.env.PREFIX} help para obter ajuda!` , // COMANDO HELP DO BOT
+      `$ {bot.guilds.cache.size} servidores!` , // QUANTIDADE DE SERVIDORES QUE O BOT ESTÁ
+     
     ]  ,
     i   =   0 ;
   setInterval  (   ( )   =>   bot . user . setActivity  ( `$ {Activities [i ++% Activities.length]}` ,   {
-        digite :   "STREAMING" ,   url :   'https: // www.twitch.tv / moner_gsd'
+        digite :   "STREAMING" ,   url :   'link da twitch'
       } ) ,   1000   *   60 ) ;    // ASSISTIR, ESCUTAR, JOGAR, TRANSMITIR
 
   bot . do utilizador
